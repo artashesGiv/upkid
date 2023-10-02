@@ -1,0 +1,217 @@
+.header {
+    $b: &;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1;
+
+    &--view {
+        &-base {
+            #{$b}__link {
+                &--desktop {
+                    color: var(--textSurface);
+                }
+            }
+
+            #{$b}__phone {
+                &--tablet {
+                    color: var(--textSurface);
+                }
+            }
+        }
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__section {
+        display: flex;
+        align-items: center;
+    }
+
+    &__hamburger {
+        margin-left: toRem(8);
+    }
+
+    &__modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        z-index: 10;
+    }
+
+    &__wrapper {
+        display: flex;
+    }
+
+    &__scroller {
+        overflow-y: auto;
+        overflow-x: hidden;
+        background-color: var(--backgroundBase);
+        max-height: 100%;
+        width: 100%;
+
+        @include paddingLevel(top, blue);
+        @include paddingLevel(bottom, purple);
+
+        padding-left: toRem(20);
+        padding-right: toRem(20);
+        box-sizing: border-box;
+    }
+
+    &__link {
+        &--mobile {
+            display: block;
+            width: 100%;
+
+            & + & {
+                @include marginLevel(top, yellow);
+            }
+        }
+    }
+
+    &__phone {
+        &--mobile {
+            width: 100%;
+
+            @include marginLevel(top, purple);
+        }
+    }
+
+    &__socials {
+        display: flex;
+
+        &--mobile {
+            @include marginLevel(top, yellow);
+        }
+    }
+
+    &__social {
+        &--mobile {
+            flex-grow: 1;
+
+            & + & {
+                margin-left: toRem(8);
+            }
+        }
+    }
+
+    &__button {
+        &--close {
+            flex-shrink: 0;
+        }
+    }
+
+    @include media-maxMobileLate {
+        @include paddingLevel(vertical, blue);
+
+        &__phone {
+            &--tablet {
+                display: none;
+            }
+        }
+
+        &__modal {
+            flex-direction: column;
+            justify-content: flex-end;
+            padding-top: toRem(20);
+            box-sizing: border-box;
+        }
+
+        &__wrapper {
+            justify-content: flex-end;
+            flex-direction: column;
+            flex-grow: 1;
+            align-items: flex-end;
+            max-height: 100%;
+        }
+
+        &__scroller {
+            border-radius: toRem(25) toRem(25) 0 0;
+        }
+    }
+
+    @include media-maxTablet {
+        &__button {
+            &--action {
+                display: none;
+            }
+        }
+
+        &__socials {
+            &--desktop {
+                display: none;
+            }
+        }
+
+        &__menu {
+            &--desktop {
+                display: none;
+            }
+        }
+
+        @include media-tabletLate {
+            @include paddingLevel(top, purple);
+            @include paddingLevel(bottom, cobalt);
+        }
+    }
+
+    @include media-tabletLate {
+        &__phone {
+            &--tablet {
+                margin-right: toRem(30);
+                padding: toRem(14) 0;
+            }
+        }
+
+        &__scroller {
+            order: -1;
+            width: toRem(320);
+        }
+    }
+
+    @include media-desktop {
+        @include paddingLevel(top, purple);
+        @include paddingLevel(bottom, purple);
+
+        &__button {
+            &--action {
+                margin-left: toRem(8);
+            }
+        }
+
+        &__socials {
+            &--desktop {
+                margin-right: toRem(30);
+            }
+        }
+
+        &__link {
+            padding: toRem(14) toRem(10);
+        }
+
+        &__menu {
+            &--desktop {
+                margin-left: toRem(40);
+            }
+        }
+
+        &__hamburger {
+            display: none;
+        }
+
+        &__modal {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,111 @@
+.modal-success-story {
+    display: flex;
+
+    &__student {
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        border-radius: $borderRadiusL;
+        background-color: var(--backgroundSecondary);
+        width: 100%;
+        aspect-ratio: 1;
+    }
+
+    &__decoration {
+        @include center();
+
+        width: 100%;
+    }
+
+    &__image {
+        @include center(horizontals);
+
+        top: toRem(20);
+        width: 100%;
+    }
+
+    &__title {
+        @include marginLevel(top, pink);
+    }
+
+    &__text {
+        @include marginLevel(top, green);
+        @include fontSize(p1);
+    }
+
+    &__main {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    @include media-maxMobileLate {
+        @include paddingLevel(bottom, purple);
+        @include paddingLevel(top, cobalt);
+
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--backgroundSurface);
+        border-radius: $borderRadiusM $borderRadiusM 0 0;
+        padding-left: toRem(20);
+        padding-right: toRem(20);
+
+        &__main {
+            @include marginLevel(top, blue);
+        }
+    }
+
+    @include media-tabletLate {
+        width: toRem(684);
+        align-items: flex-start;
+
+        &__student {
+            width: toRem(244);
+            height: toRem(342);
+            margin-right: toRem(20);
+        }
+
+        &__image,
+        &__decoration {
+            height: 100%;
+            width: auto;
+        }
+
+        &__image {
+            @include center(horizontal);
+
+            picture {
+                height: 100%;
+
+                img {
+                    height: 100%;
+                    width: auto;
+                }
+            }
+        }
+
+        &__main {
+            @include paddingLevel(both, cobalt);
+
+            width: toRem(420);
+            box-sizing: border-box;
+            background-color: var(--backgroundSecondary);
+            border-radius: $borderRadiusL;
+        }
+    }
+
+    @include media-desktop {
+        width: toRem(860);
+
+        &__student {
+            width: toRem(332);
+            height: toRem(332);
+        }
+
+        &__main {
+            width: toRem(508);
+
+            @include paddingLevel(both, purple);
+        }
+    }
+}

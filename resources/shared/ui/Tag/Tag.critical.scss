@@ -1,0 +1,36 @@
+.tag {
+    box-shadow: var(--shadowBase);
+    border: 1px solid var(--borderSecondary);
+    border-radius: toRem(24);
+    box-sizing: border-box;
+    background-color: var(--backgroundSurface);
+    display: inline-flex;
+    align-items: center;
+    padding: toRem(6) toRem(10);
+
+    @include fontSize(p2, (weight: 500));
+
+    &--view {
+        &-base {
+            color: var(--textBase);
+        }
+
+        &-brand {
+            color: var(--textBrand);
+        }
+    }
+
+    i {
+        color: var(--textBrand);
+        margin-right: toRem(4);
+        font-size: toRem(16);
+    }
+
+    @include media-tabletLate {
+        padding: toRem(8) toRem(16);
+
+        i {
+            font-size: toRem(18);
+        }
+    }
+}

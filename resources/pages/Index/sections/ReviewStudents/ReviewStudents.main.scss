@@ -1,0 +1,13 @@
+.review-students {
+    &__slide {
+        width: auto !important;
+
+        & + & {
+            margin-left: toRem(12);
+
+            @include media-tablet {
+                margin-left: toRem(20);
+            }
+        }
+    }
+}

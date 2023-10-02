@@ -1,0 +1,52 @@
+.main-response {
+    position: relative;
+    padding-top: toRem(140);
+    padding-bottom: toRem(92);
+    box-sizing: border-box;
+
+    &__wrapper {
+        margin: 0 auto;
+        width: toRem(729);
+        padding: toRem(48);
+        background-color: var(--backgroundSurface);
+        border-radius: toRem(24);
+    }
+
+    &__title {
+        @include marginLevel(bottom, pink);
+    }
+
+    &__description {
+        @include marginLevel(bottom, purple);
+        @include fontSize(p1);
+    }
+
+    &__action {
+        display: inline-block;
+        position: relative;
+    }
+
+    &__deco {
+        position: absolute;
+        top: toRem(-32 + 14);
+        width: toRem(30);
+        height: toRem(30);
+        font-size: toRem(30);
+
+        &--left {
+            left: toRem(-30);
+            transform: rotateZ(-15deg) rotateY(180deg);
+        }
+
+        &--right {
+            right: toRem(-30);
+            transform: rotateZ(15deg);
+        }
+    }
+
+    &__repeat {
+        @include center(horizontal);
+
+        bottom: toRem(12);
+    }
+}

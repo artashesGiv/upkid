@@ -1,0 +1,10 @@
+.snap-scroll {
+    &__bullet {
+        transition: 0.3s ease;
+        transition-property: background-color;
+
+        &.is-active {
+            background-color: var(--backgroundBrand);
+        }
+    }
+}

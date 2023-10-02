@@ -1,0 +1,75 @@
+.card-info {
+    $b: &;
+
+    position: relative;
+    z-index: 2;
+    background-color: var(--backgroundSecondary);
+    border-radius: $borderRadiusL;
+    padding: 0 toRem(20);
+    overflow: hidden;
+    box-sizing: border-box;
+    min-width: toRem(274);
+
+    @include paddingLevel(vertical, blue);
+
+    &.with-image {
+        padding-top: toRem(86);
+    }
+
+    &__header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        height: toRem(118);
+    }
+
+    &__image {
+        @include center();
+
+        width: 100%;
+        height: auto;
+    }
+
+    &__content {
+        @include marginLevel(top, blue);
+    }
+
+    &__description {
+        @include marginLevel(top, red);
+        @include fontSize(p1);
+    }
+
+    @include media-tabletLate {
+        padding: 0 toRem(32);
+        min-width: unset;
+
+        @include paddingLevel(vertical, purple);
+
+        #{$b}__content {
+            @include marginLevel(top, cobalt);
+        }
+
+        &.is-row {
+            display: flex;
+            padding: 0 toRem(26);
+
+            @include paddingLevel(vertical, cobalt);
+
+            #{$b}__content {
+                margin: 0 0 0 toRem(25);
+            }
+
+            #{$b}__icon {
+                flex-shrink: 0;
+            }
+        }
+    }
+
+    @include media-desktop {
+        &.is-row {
+            display: block;
+        }
+    }
+}

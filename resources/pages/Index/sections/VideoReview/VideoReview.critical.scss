@@ -1,0 +1,37 @@
+.video-review {
+    overflow: hidden;
+
+    &__slide {
+        width: auto;
+        margin: 0 toRem(6);
+
+        @include media-desktop {
+            margin: 0 toRem(10);
+        }
+    }
+
+    &__video {
+        border-radius: $borderRadiusS;
+        overflow: hidden;
+        width: toRem(250);
+        height: toRem(140);
+        position: relative;
+        z-index: 1;
+
+        & > * {
+            position: relative;
+            z-index: -1;
+        }
+
+        @include media-tablet {
+            border-radius: $borderRadiusL;
+            width: toRem(508);
+            height: toRem(286);
+        }
+
+        @include media-desktop {
+            width: toRem(618);
+            height: toRem(348);
+        }
+    }
+}

@@ -1,0 +1,30 @@
+.rating {
+    $b: &;
+
+    &__marks {
+        font-size: 0;
+        white-space: nowrap;
+    }
+
+    &__mark {
+        width: toRem(24);
+        height: toRem(24);
+        display: inline-block;
+        position: relative;
+        background: url('/images/decoration/star/empty.svg') no-repeat center;
+        background-size: cover;
+    }
+
+    &__image {
+        @include center();
+
+        min-width: 100%;
+    }
+
+    @include media-tabletLate {
+        &__mark {
+            width: toRem(28);
+            height: toRem(28);
+        }
+    }
+}

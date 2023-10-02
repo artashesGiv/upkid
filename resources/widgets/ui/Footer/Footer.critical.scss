@@ -1,0 +1,124 @@
+.footer {
+    background-color: var(--backgroundSecondaryBase);
+
+    &__head {
+        display: flex;
+        align-items: center;
+
+        @include marginLevel(bottom, purple);
+    }
+
+    &__privacy {
+        @include fontSize(p3);
+
+        color: var(--textSurface);
+        opacity: 0.5;
+    }
+
+    @include media-maxMobileLate {
+        @include paddingLevel(vertical, purple);
+
+        &__phone {
+            order: -1;
+            margin-left: auto;
+        }
+
+        &__logo {
+            order: -2;
+        }
+
+        &__menu {
+            width: 100%;
+
+            @include marginLevel(top, purple);
+        }
+
+        &__socials {
+            @include marginLevel(top, purple);
+        }
+
+        &__head {
+            flex-wrap: wrap;
+        }
+
+        &__link {
+            display: block;
+
+            &--head {
+                padding: toRem(8) 0;
+            }
+
+            &--bottom {
+                & + & {
+                    @include marginLevel(top, pink);
+                }
+            }
+        }
+
+        &__privacy {
+            @include marginLevel(top,gray);
+        }
+    }
+
+    @include media-tabletLate {
+        @include paddingLevel(vertical, gray);
+
+        &__menu {
+            display: flex;
+            margin-left: toRem(20);
+        }
+
+        &__phone {
+            margin-left: auto;
+            padding: toRem(10) 0;
+            margin-right: toRem(20);
+
+            & + .footer__socials {
+                margin-left: 0;
+            }
+        }
+
+        &__socials {
+            margin-left: auto;
+        }
+
+        &__link {
+            &--head {
+                padding: toRem(10);
+            }
+
+            &--bottom {
+                & + & {
+                    margin-left: toRem(20);
+                }
+            }
+        }
+
+        &__links {
+            display: flex;
+            align-items: center;
+        }
+
+        @include media-maxTablet {
+            &__privacy {
+                @include marginLevel(top,purple);
+            }
+        }
+    }
+
+    @include media-desktop {
+        &__bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &__privacy {
+            order: -1;
+        }
+
+        &__menu {
+            margin-left: toRem(40);
+        }
+    }
+}

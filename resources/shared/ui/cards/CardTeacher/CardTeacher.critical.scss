@@ -1,0 +1,102 @@
+.card-teacher {
+    $b: &;
+
+    position: relative;
+    min-width: toRem(274);
+    height: toRem(422);
+    border-radius: $borderRadiusL;
+    overflow: hidden;
+    background-color: var(--backgroundTeacher);
+    box-shadow: var(--shadowBase);
+
+    &__photo {
+        height: toRem(332);
+        width: 100%;
+    }
+
+    &--pattern {
+        &-1 {
+            #{$b}__photo {
+                background: url('/images/decoration/cards/teacher/pattern-1.svg') no-repeat center;
+                background-size: cover;
+            }
+        }
+
+        &-2 {
+            #{$b}__photo {
+                background: url('/images/decoration/cards/teacher/pattern-2.svg') no-repeat center;
+                background-size: cover;
+            }
+        }
+    }
+
+    &__image {
+        height: 100%;
+        margin: 0 auto;
+        object-fit: cover;
+        display: block;
+
+        picture {
+            width: 100%;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    &__information {
+        @include paddingLevel(vertical, blue);
+
+        width: 100%;
+        padding-left: toRem(20);
+        padding-right: toRem(20);
+        position: absolute;
+        background-color: var(--backgroundSurface);
+        border: 1px solid var(--borderSecondary);
+        border-radius: $borderRadiusL;
+        bottom: 0;
+        height: toRem(206);
+        box-sizing: border-box;
+        z-index: 2;
+    }
+
+    &__name {
+        @include marginLevel(top, blue);
+        @include fontSize(h3);
+
+        font-weight: 600;
+    }
+
+    &__description {
+        @include marginLevel(top, yellow);
+        @include fontSize(p1);
+
+        color: var(--textSecondary);
+        max-height: toRem(90);
+        overflow: hidden;
+    }
+
+    @include media-tabletLate {
+        width: auto;
+        height: toRem(528);
+
+        &__photo {
+            height: toRem(380);
+        }
+
+        &__information {
+            @include paddingLevel(vertical, cobalt);
+
+            padding-left: toRem(24);
+            padding-right: toRem(24);
+            height: toRem(244);
+        }
+
+        &__description {
+            @include marginLevel(top, green);
+
+            max-height: toRem(100);
+        }
+    }
+}

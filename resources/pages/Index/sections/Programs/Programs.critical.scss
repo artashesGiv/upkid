@@ -1,0 +1,21 @@
+.programs {
+    background: var(--backgroundSecondary);
+
+    @include media-maxMobileLate {
+        &__item {
+            min-width: toRem(274);
+
+            & + & {
+                margin-left: toRem(12);
+            }
+        }
+    }
+
+    @include media-tabletLate {
+        &__item {
+            & + & {
+                @include marginLevel(top, blue);
+            }
+        }
+    }
+}

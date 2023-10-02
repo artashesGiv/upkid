@@ -1,0 +1,85 @@
+.form-lesson {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    background-color: var(--backgroundSurface);
+    border-radius: $borderRadiusL;
+    padding: toRem(54) toRem(24) 0;
+    overflow: hidden;
+
+    @include paddingLevel(bottom, cobalt);
+
+    &__header {
+        position: absolute;
+        padding-left: inherit;
+        padding-right: inherit;
+        top: toRem(0);
+        left: toRem(0);
+        width: 100%;
+        background: var(--backgroundSecondary);
+        box-sizing: border-box;
+
+        @include paddingLevel(top, blue);
+        @include paddingLevel(bottom, blue);
+    }
+
+    &__decorations {
+        display: flex;
+    }
+
+    &__decoration {
+        border-radius: 50%;
+        width: toRem(14);
+        height: toRem(14);
+
+        & + & {
+            margin-left: toRem(6);
+        }
+
+        &--red {
+            background-color: var(--orange);
+        }
+
+        &--yellow {
+            background-color: var(--yellow);
+        }
+
+        &--green {
+            background-color: var(--green);
+        }
+    }
+
+    &__content {
+        @include marginLevel(top, cobalt);
+    }
+
+    @include media-maxMobile {
+        &__privacy {
+            display: none;
+        }
+    }
+
+    @include media-tablet {
+        padding: toRem(54) toRem(32) 0;
+
+        @include paddingLevel(bottom, purple);
+
+        &__decorations {
+            left: toRem(32);
+        }
+
+        &__content {
+            @include marginLevel(top, purple);
+        }
+
+        &__privacy {
+            text-align: center;
+            opacity: 0.2;
+
+            @include marginLevel(top, green);
+            @include fontSize(p4);
+        }
+    }
+}

@@ -1,0 +1,18 @@
+.link {
+    @include fontSize(p3);
+
+    &--view {
+        &-base {
+            color: var(--textBase);
+        }
+
+        &-surface {
+            color: var(--textSurface);
+        }
+
+        &-secondary {
+            color: var(--textSurface);
+            opacity: 0.5;
+        }
+    }
+}

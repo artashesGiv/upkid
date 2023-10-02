@@ -1,0 +1,15 @@
+.collapse {
+    $b: &;
+
+    cursor: pointer;
+
+    &__icon {
+        transition: transform 0.3s ease;
+    }
+
+    &.is-active {
+        #{$b}__icon {
+            transform: rotate(45deg);
+        }
+    }
+}

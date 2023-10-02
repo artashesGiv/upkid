@@ -1,0 +1,36 @@
+.button-hamburger {
+    width: toRem(44);
+    height: toRem(44);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: toRem(16);
+    background-color: var(--controlSecondaryBackground);
+
+    span {
+        width: toRem(18);
+        height: toRem(2);
+        background-color: var(--controlBrandText);
+
+        & + span {
+            margin-top: toRem(3);
+        }
+    }
+
+    &.is-active {
+        span {
+            &:first-child {
+                transform: translate(0, toRem(5)) rotate(45deg);
+            }
+
+            &:nth-child(2) {
+                opacity: 0;
+            }
+
+            &:last-child {
+                transform: translate(0, toRem(-5)) rotate(-45deg);
+            }
+        }
+    }
+}

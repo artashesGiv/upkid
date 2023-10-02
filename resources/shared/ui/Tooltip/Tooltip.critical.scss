@@ -1,0 +1,32 @@
+.tooltip {
+    position: relative;
+    font-size: 0;
+    cursor: pointer;
+    display: inline-block;
+
+    &__content {
+        & > p {
+            color: var(--textBase);
+        }
+    }
+
+    &__wrapper {
+        $b: &;
+
+        position: absolute;
+        bottom: calc(100% + #{toRem(8)});
+        right: toRem(-10);
+        border-radius: toRem(6);
+        min-width: toRem(180);
+        background: var(--backgroundSecondary);
+        z-index: 10;
+        opacity: 0;
+        transform: translate(0, 10px);
+        padding: toRem(12) toRem(16);
+        box-sizing: border-box;
+        box-shadow: var(--shadowSecondary);
+        pointer-events: none;
+
+        @include fontSize(p3);
+    }
+}

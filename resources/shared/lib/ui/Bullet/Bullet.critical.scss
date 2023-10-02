@@ -1,0 +1,36 @@
+.bullet {
+    position: relative;
+    box-shadow: var(--shadowBase);
+    color: var(--textBrand);
+    background-color: var(--backgroundSurface);
+
+    &__icon {
+        @include center();
+
+        font-size: toRem(30);
+    }
+
+    border-radius: $borderRadiusL;
+    width: toRem(66);
+    height: toRem(66);
+
+    @include media-tablet {
+        border-radius: $borderRadiusXL;
+        width: toRem(80);
+        height: toRem(80);
+
+        &__icon {
+            font-size: toRem(40);
+        }
+    }
+
+    @include media-desktop {
+        border-radius: $borderRadiusXL;
+        width: toRem(98);
+        height: toRem(98);
+
+        &__icon {
+            font-size: toRem(46);
+        }
+    }
+}

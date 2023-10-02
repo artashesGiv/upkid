@@ -1,0 +1,19 @@
+.icon-flag {
+    img {
+        width: 100%;
+        display: block;
+        font-size: 0;
+    }
+
+    &--size {
+        &-s {
+            width: toRem(16);
+            height: toRem(16);
+        }
+
+        &-m {
+            width: toRem(18);
+            height: toRem(18);
+        }
+    }
+}

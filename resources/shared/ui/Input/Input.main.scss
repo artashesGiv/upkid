@@ -1,0 +1,57 @@
+.input {
+    $b: &;
+
+    transition: opacity 0.3s ease;
+
+    &__value {
+        transition: 0.3s ease;
+        transition-property: color, border-color, box-shadow;
+
+        &::placeholder {
+            transition: 0.3s ease;
+            transition-property: color, box-shadow, opacity;
+        }
+    }
+
+    &--view {
+        &-base {
+            #{$b} {
+                &__value {
+                    &:focus {
+                        box-shadow: inset 0 0 0 1px var(--borderBaseHover);
+                    }
+                }
+            }
+        }
+    }
+
+    @include media-hover-device {
+        &--view {
+            &-base {
+                &:hover {
+                    #{$b} {
+                        &__value {
+                            box-shadow: inset 0 0 0 1px var(--borderBaseHover);
+
+                            &::placeholder {
+                                color: var(--textSecondaryHover);
+                            }
+                        }
+                    }
+                }
+            }
+
+            &-secondary {
+                &:hover {
+                    #{$b} {
+                        &__value {
+                            &::placeholder {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

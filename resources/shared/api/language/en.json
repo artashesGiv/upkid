@@ -1,0 +1,343 @@
+{
+    "content": {
+        "header": {
+            "lessonButton": "Free Trial Lesson",
+            "closeButton": "Close menu",
+            "links": {
+                "program": "Program Overview",
+                "about": "About us",
+                "feedback": "Reviews",
+                "faq": "FAQ"
+            }
+        },
+        "main": {
+            "title": "Developing children's thinking through programming",
+            "description": "An international online programming school for children aged 9 to 17",
+            "button": "Sing up for a trial lesson",
+            "game": {
+                "buttonStart": "Click on me",
+                "buttonEnd": "for exit",
+                "buttonOneMoreTime": "Play again",
+                "buttonPopup": "Try for free",
+                "textStart": "Use your mouse to help the dinosaur catch all the items",
+                "textEnd": {
+                    "title": "Want your child to learn how to create something like this?",
+                    "description": "Sign up for a free trial lesson right now!"
+                }
+            },
+            "ticker": ["5 years of experience", "More than 10,000 students", "We work in 25 countries worldwide"]
+        },
+        "successStory": {
+            "title": "Success Stories of Our Students",
+            "list": [
+                {
+                    "image": "/images/successStory/7.png",
+                    "name": "Emma",
+                    "title": "Young prodigy Emma",
+                    "text": "Emma started with us at the age of 10 with no coding experience. Through dedicated learning and guidance from our instructors, she developed her skills and participated in coding competitions. Today, she is a recognized young coder and has won several awards for her innovative projects",
+                    "buttonReadFullText": "Read the entire review"
+                },
+                {
+                    "image": "/images/successStory/8.png",
+                    "name": "Max",
+                    "title": "Mobile game developer Max",
+                    "text": "Max joined our school when he was 15 years old. With a passion for game development, he immersed himself in our curriculum, learning various programming languages and techniques. After completing our program, Max successfully published his own mobile game, which has garnered thousands of downloads and positive reviews.",
+                    "buttonReadFullText": "Read the entire review"
+                },
+                {
+                    "image": "/images/successStory/9.png",
+                    "imageMobile": "/images/successStory/5-mobile.png",
+                    "name": "Sarah",
+                    "title": "Sarah's Story: The Future with Artificial Intelligence",
+                    "text": "Sarah began her programming journey with us at the age of 14. She demonstrated exceptional problem-solving abilities and a keen interest in artificial intelligence. With the support of our experienced teachers, Sarah delved into advanced AI concepts and applied her knowledge to develop a chatbot that assists in customer service for a local business. Her project received recognition and was adopted by several other companies",
+                    "buttonReadFullText": "Read the entire review"
+                }
+            ]
+        },
+        "benefits": {
+            "title": "What will a child get at our school?",
+            "list": [
+                {
+                    "icon": "user-plus",
+                    "title": "Skills development",
+                    "description": "Programming classes develop logical thinking and creativity"
+                },
+                {
+                    "icon": "zap",
+                    "title": "Beneficial hobby",
+                    "description": "Instead of playing computer games and spending time on social media, your child will develop their abilities"
+                },
+                {
+                    "icon": "trending-up",
+                    "title": "Promising profession",
+                    "description": "Our graduates are in demand and have good earning potential"
+                }
+            ]
+        },
+        "modalIntroductionLesson": {
+            "title": "Sing up for a trial lesson!",
+            "programsPointsTitle": "Course program",
+            "privacy": "By submitting personal information, you agree to <a href=\"/privacy\" class=\"\" target=\"_blank\" rel=\"noopener noreferrer\">the privacy policy</a>"
+        },
+        "modalFreeLesson": {
+            "title": "Sing up for a trial lesson",
+            "bullets": ["Let's get acquainted", "We'll show you how the lesson goes", "Discover the child's interests"]
+        },
+        "programs": {
+            "title": "Courses",
+            "description": "You can start learning at any age and with any level of knowledge! We will tailor a schedule for you on any convenient day and time!",
+            "list": [
+                {
+                    "title": "Introduction to Programming\nFor kids 9-11 years old",
+                    "description": "Course objective: Learn the basics of programming and develop a child's thinking skills",
+                    "type": 1,
+                    "classText": "2-4 class",
+                    "years": "9-11 years old",
+                    "programPoints": [
+                        "Creating programs and games using visual blocks in Scratch",
+                        "Creating simple algorithms, using variables",
+                        "Learning logical conditions and loops",
+                        "Training teamwork skills",
+                        "Solving interesting tasks ang competing in quick thinking challenges"
+                    ]
+                },
+                {
+                    "title": "Creating apps and games in Python\nFor kids 12-14 years old",
+                    "description": "Course Objective: Learn to solve complex tasks and create programs",
+                    "type": 2,
+                    "classText": "5-9 class",
+                    "years": "12-14 years old",
+                    "programPoints": [
+                        "Creating algorithms in mature programming languages like Python and JavaScript",
+                        "Introduction to variables, loops, logical conditions, functions, and other fundamentals",
+                        "Solving complex tasks through programming",
+                        "Practical lessons where students create applications, games, and run them on their own computers"
+                    ]
+                },
+                {
+                    "title": "Website development and business solutions\nFor children 14-17 years old",
+                    "description": "Course objective: Create a large-scale graduation project",
+                    "type": 3,
+                    "classText": "9-11 class",
+                    "years": "14-17 years old",
+                    "programPoints": [
+                        "Working with databases and learning SQL",
+                        "Solving business tasks",
+                        "Creating user interfaces",
+                        "Basics of robust code and testing",
+                        "Creating websites and web applications",
+                        "Creating their own graduation project"
+                    ]
+                }
+            ],
+            "buttons": {
+                "program": "Training program",
+                "sign": "Sign up"
+            }
+        },
+        "advantages": {
+            "title": "Why Upkid",
+            "list": [
+                {
+                    "icon": "target",
+                    "title": "Focus on Practice",
+                    "description": "Knowledge is effectively assimilated through a large amount of hands-on practice in our classes. Children maintain their interest and enhance their thinking skills through engaging tasks",
+                    "image": "/images/advantages/1"
+                },
+                {
+                    "icon": "book-open",
+                    "title": "Unique methodologies",
+                    "description": "The curriculum is designed by experienced programmers who have solved real-world business problems. As a result, our students become sought-after professionals in top IT companies",
+                    "image": "/images/advantages/4"
+                },
+                {
+                    "icon": "book-open",
+                    "title": "Online learning",
+                    "description": "It's convenient since there's no need to travel anywhere. Kids can study from anywhere, just needing a computer or laptop. They learn in small groups, constantly interacting with the teacher. They communicate, compete, and achieve new victories together",
+                    "image": "/images/advantages/2"
+                },
+                {
+                    "icon": "script",
+                    "title": "Final project",
+                    "description": "At the end of the program, students not only receive a diploma but also create a final project. Graduates transform their acquired knowledge into a project that can be included in their portfolio for college admissions or job applications",
+                    "image": "/images/advantages/3"
+                }
+            ]
+        },
+        "formConsultation": {
+            "title": "Get a consultation",
+            "pointsList": [
+                "We will discuss your child's experience and interests.",
+                "We will provide information about the learning program",
+                "We will answer your questions"
+            ],
+            "privacy": "By submitting personal data, you agree to <a href=\"/privacy\" class=\"\" target=\"_blank\" rel=\"noopener noreferrer\">the privacy policy</a>"
+        },
+        "videoReview": {
+            "title": "Class records",
+            "list": [
+                "https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1",
+                "https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1",
+                "https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1",
+                "https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1",
+                "https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1"
+            ]
+        },
+        "reviewStudents": {
+            "title": "Students reviews",
+            "list": [
+                {
+                    "time": "0:17",
+                    "imagePath": "/images/students/4.png",
+                    "name": "Valeria Ilies",
+                    "description": "15 years old, is enrolled in the \"Introduction to Programming\" course.",
+                    "gif": "/images/students-cases/1.gif",
+                    "video": "https://youtube.com/shorts/1Fsx4RjRf0U?feature=share"
+                },
+                {
+                    "time": "0:24",
+                    "imagePath": "/images/students/5.png",
+                    "name": "Victor Pislari",
+                    "description": "16 years old, is taking the \"Website Development and Business Solutions\" course",
+                    "gif": "/images/students-cases/2.gif",
+                    "video": "https://youtube.com/shorts/FDWQoGNQxT0?feature=share"
+                },
+                {
+                    "time": "0:19",
+                    "imagePath": "/images/students/6.png",
+                    "name": "Igor Cojocaru",
+                    "description": "17 years old, is enrolled in the \"Creating Applications and Games with Python\" course",
+                    "gif": "/images/students-cases/3.gif",
+                    "video": "https://youtube.com/shorts/aBRL7HNyECg?feature=share"
+                }
+            ]
+        },
+        "reviewParents": {
+            "title": "Parents reviews",
+            "list": [
+                {
+                    "user": {
+                        "id": 8,
+                        "name": "Review by Mary Nichols",
+                        "role": "mom"
+                    },
+                    "rating": 4,
+                    "review": "We are thrilled with the progress our child has made since enrolling in Upkid Programming School.\nThe curriculum is well-structured, and the teachers are highly knowledgeable and dedicated\n\nOur son has developed a strong foundation in programming and has gained confidence in their abilities. The online format allows for flexibility and personalized attention, ensuring that our child receives the support they need\n\nWe highly recommend Upkid to other parents looking to nurture their child's programming skills"
+                },
+                {
+                    "user": {
+                        "id": 9,
+                        "name": "Review by Chris Garcia",
+                        "role": "dad"
+                    },
+                    "rating": 5,
+                    "review": "As a parent, I initially had reservations about online education for my child. However, Upkid School has completely changed my perspective. The teachers are fantastic at creating an engaging and interactive learning environment. They go above and beyond to ensure that each student understands the concepts thoroughly. Upkid has exceeded our expectations, and we are grateful for the quality educationour child is receiving"
+                },
+                {
+                    "user": {
+                        "id": 10,
+                        "name": "Review by Paul Howard",
+                        "role": "dad"
+                    },
+                    "rating": 4,
+                    "review": "Upkid has been an amazing experience for my child! The interactive online classes have helped my child develop strong programming skills while having fun. The teachers are knowledgeable, patient, and create a supportive learning environment. My child looks forward to every class. I highly recommend Upkid to any parent!"
+                }
+            ],
+            "buttonReadFull": "Read the entire review"
+        },
+        "teacher": {
+            "title": "Our teachers",
+            "list": [
+                {
+                    "id": 13,
+                    "name": "Lisa Johnson",
+                    "description": "With a decade-long passion for technology, I enjoy guiding kids in programming to foster their creativity and problem-solving skills",
+                    "experience": "10 years of experience"
+                },
+                {
+                    "id": 14,
+                    "name": "Mike Davis",
+                    "description": "А programming instructor fueled by a decade of tech fascination. I find joy in empowering children with programming knowledge, nurturing their logical thinking",
+                    "experience": "12 years of experience"
+                },
+                {
+                    "id": 15,
+                    "name": "Sarah Thompson",
+                    "description": "An enthusiastic programmer for 7 years. Teaching kids coding is my passion as it cultivates their critical thinking and equips them with valuable skills for the future",
+                    "experience": "7 years of  experience"
+                },
+                {
+                    "id": 16,
+                    "name": "Alex Ramirez",
+                    "description": "I am a tech enthusiast since the age of 16. Teaching children programming brings me immense joy as I witness their creativity and problem-solving abilities flourish",
+                    "experience": "9 years of experience"
+                },
+                {
+                    "id": 17,
+                    "name": "Emily Scott",
+                    "description": "With a years of tech expertise, I love guiding children through the fascinating world of coding, igniting their curiosity and unleashing their potential",
+                    "experience": "6 years of experience"
+                },
+                {
+                    "id": 18,
+                    "name": "David Wilson",
+                    "description": "A programming mentor with a decade of tech passion. I'm driven by the belief that teaching children programming empowers them to shape the future",
+                    "experience": "10 years of experience"
+                }
+            ]
+        },
+        "questions": {
+            "title": "FAQ",
+            "list": [
+                {
+                    "title": "How often are the classes held and how long do they last?",
+                    "answer": "Classes are held once a week for about an hour or an hour and a half"
+                },
+                {
+                    "title": "How many students are in a group?",
+                    "answer": "On average, there are about ten students in a group."
+                },
+                {
+                    "title": "Is any certificate issued at the end of course?",
+                    "answer": "Yes, graduates of UpKid school receive a diploma of completion of the online programming school. The diploma indicates the completed program."
+                },
+                {
+                    "title": "Do I need a computer and what kind of computer?",
+                    "answer": "Yes, any computer or laptop will do. The operating system and version are not so important. A microphone and headphones will also be needed, but laptops usually have them built-in. However, it would be more comfortable for the child to have a regular headset. A webcam is not necessary, but the teachers have one"
+                },
+                {
+                    "title": "What happens if a child misses a class?",
+                    "answer": "The teacher will have a separate session with the child to cover the missed material"
+                },
+                {
+                    "title": "Where are you located?",
+                    "answer": "We are an online school, and we operate wherever there is an internet connection. Online learning has proven its effectiveness and is not inferior to in-person classes. Children can see and hear the teacher, who explains the material on an electronic board. Students communicate with each other in the group. The teacher can also connect to the child's desktop to check their problem-solving and assist if they are having any difficulties"
+                }
+            ]
+        },
+        "formFreeLesson": {
+            "title": "Sign up for a free online class",
+            "description": "After the trial lesson, you will be able to make a final decision",
+            "bulletsTitle": "In the first lesson we",
+            "bullets": ["Let's get acquainted", "We'll show you how the lesson goes", "Discover the child's interests"],
+            "privacy": "By submitting personal information, you agree to <a href=\"/privacy\" class=\"\" target=\"_blank\" rel=\"noopener noreferrer\">the privacy policy</a>"
+        },
+        "footer": {
+            "menu": {
+                "program": "Program Overview",
+                "about": "About us",
+                "feedback": "Reviews",
+                "faq": "FAQ"
+            }
+        },
+        "response": {
+            "title": "Application submitted!!!",
+            "description": "Please wait for a response from our operator - we will contact you soon."
+        },
+        "privacy": "By submitting personal information, you agree to <a href=\"/privacy\" class=\"\" target=\"_blank\" rel=\"noopener noreferrer\">the privacy policy</a>",
+        "notFound": {
+            "text": "Unfortunately, the requested page was not found. It's possible that you followed a link with an error or the resource has been removed",
+            "button": "Please return to the homepage"
+        }
+    }
+}

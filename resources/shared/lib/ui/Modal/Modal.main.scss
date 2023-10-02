@@ -1,0 +1,29 @@
+.modal {
+    &.is-active {
+        pointer-events: auto;
+    }
+
+    &__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--backgroundSecondaryBase);
+        opacity: 0.3;
+    }
+
+    @include media-tabletLate {
+        &__content {
+            @include center();
+
+            max-height: 100%;
+            overflow-y: auto;
+            overflow-x: hidden;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+    }
+}

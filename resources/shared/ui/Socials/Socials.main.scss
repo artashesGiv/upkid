@@ -1,0 +1,14 @@
+.socials {
+    &__item {
+        transition: 0.3s ease;
+        transition-property: opacity;
+    }
+
+    @include media-hover-device {
+        &__item {
+            &:hover {
+                opacity: 0.5;
+            }
+        }
+    }
+}

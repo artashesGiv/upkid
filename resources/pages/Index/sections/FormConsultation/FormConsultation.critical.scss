@@ -1,0 +1,7 @@
+.form-consultation {
+    @include media-maxMobileLate {
+        &__container {
+            background-color: var(--backgroundBrand);
+        }
+    }
+}

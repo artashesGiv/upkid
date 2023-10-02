@@ -1,0 +1,162 @@
+.form {
+    position: relative;
+
+    &__wrapper {
+        background: var(--backgroundBrand);
+
+        @include paddingLevel(top, gray);
+        @include paddingLevel(bottom, gray);
+    }
+
+    &__bullet {
+        display: flex;
+
+        & + & {
+            @include marginLevel(top, yellow);
+        }
+    }
+
+    &__icon {
+        margin-right: toRem(8);
+        font-size: toRem(20);
+        color: var(--textSurface);
+    }
+
+    &__decoration {
+        position: absolute;
+        overflow: hidden;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+
+    &__image {
+        position: absolute;
+    }
+
+    &__container {
+        position: relative;
+        z-index: 2;
+    }
+
+    &__title {
+        @include marginLevel(bottom, pink);
+    }
+
+    &__text {
+        @include fontSize(p1);
+
+        color: var(--textSurface);
+
+        &--description {
+            @include marginLevel(bottom, blue);
+        }
+
+        &--sub-title {
+            @include marginLevel(bottom, green);
+        }
+    }
+
+    &__main {
+        @include paddingLevel(bottom, gray);
+    }
+
+    &__privacy {
+        @include fontSize(p4);
+        @include marginLevel(top, green);
+
+        color: var(--textSurface);
+        opacity: 0.3;
+        text-align: center;
+    }
+
+    @include media-tabletLate {
+        padding-top: toRem(59);
+
+        &__title {
+            @include marginLevel(bottom, blue);
+        }
+
+        &__text {
+            &--description {
+                @include marginLevel(bottom, purple);
+            }
+        }
+
+        &__wrapper {
+            @include paddingLevel(top, black);
+            @include paddingLevel(bottom, black);
+        }
+
+        &__decoration {
+            top: toRem(59);
+            height: calc(100% - #{toRem(59)});
+        }
+
+        &__image {
+            width: toRem(745);
+            height: toRem(1366);
+            top: toRem(-416);
+            right: toRem(-176);
+        }
+
+        &__main {
+            @include paddingLevel(bottom, pink);
+
+            width: calc(100% - #{toRem(400)});
+            max-width: toRem(470);
+        }
+
+        &__form {
+            width: toRem(332);
+            z-index: 2;
+            position: absolute;
+            top: toRem(-123);
+            right: 5.2%;
+        }
+
+        &__cursor {
+            position: absolute;
+            z-index: 2;
+            right: toRem(-12);
+            top: toRem(22);
+            width: toRem(33);
+            height: toRem(55);
+        }
+
+        &__cursor-image {
+            width: 100%;
+            height: 100%;
+        }
+
+        &__bullet {
+            & + & {
+                @include marginLevel(top, green);
+            }
+        }
+    }
+
+    @include media-desktop {
+        &__image {
+            right: toRem(-82);
+        }
+
+        &__form {
+            right: toRem(170);
+            top: toRem(-137);
+        }
+
+        &__main {
+            display: block;
+            width: toRem(470);
+            margin-left: toRem(98);
+        }
+
+        &__wrapper {
+            @include paddingLevel(top, beige);
+            @include paddingLevel(bottom, beige);
+        }
+    }
+}

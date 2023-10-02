@@ -1,0 +1,369 @@
+{
+    "content": {
+        "header": {
+            "lessonButton": "Lecție de probă",
+            "closeButton": "awdadad",
+            "links": {
+                "program": "Programul de studii",
+                "about": "Despre școală",
+                "feedback": "Recenzii",
+                "faq": "Întrebări și răspunsuri"
+            }
+        },
+        "main": {
+            "title": "Dezvoltarea gândirii copiilor prin programare",
+            "description": "Școală internațională de programare online pentru copii cu vârste cuprinse între 9 și 17 ani",
+            "button": "Încercați gratuit",
+            "game": {
+                "buttonStart": "Faceți clic pe mine",
+                "buttonEnd": "pentru a părăsi jocul",
+                "buttonOneMoreTime": "Joacă din nou",
+                "buttonPopup": "Încercați gratuit",
+                "textStart": "Folosește-ți mouse-ul pentru a ajuta dinozaurul să prindă toate obiectele",
+                "textEnd": {
+                    "title": "Ați dori ca copilul dumneavoastră să învețe cum să creeze așa ceva?",
+                    "description": "Înscrieți-vă acum pentru o lecție</br> de probă gratuită!"
+                }
+            },
+            "ticker": [
+                "5 ani de experienta",
+                "peste 10.000 de studenți",
+                "25 de țări"
+            ]
+        },
+        "benefits": {
+            "title": "Ce va primi copilul la școala noastră?",
+            "list": [
+                {
+                    "icon": "user-plus",
+                    "title": "Dezvoltarea abilităților",
+                    "description": "Cursurile de programare dezvoltă gândirea logică și creativitatea"
+                },
+                {
+                    "icon": "zap",
+                    "title": "Un hobby util",
+                    "description": "În loc de jocuri pe calculator și social media, copilul își va dezvolta abilitățile"
+                },
+                {
+                    "icon": "trending-up",
+                    "title": "O profesie de viitor",
+                    "description": "Absolvenții noștri sunt solicitați și bine plătiți"
+                }
+            ]
+        },
+        "successStory": {
+            "title": "Istorii de succes",
+            "list": [
+                {
+                    "image": "/images/successStory/6.png",
+                    "name": "Costel",
+                    "title": "Ce ar trebui să faceți dacă copilul dumneavoastră nu învață bine?",
+                    "text": "Costel nu se descurca bine la școală - abia dacă a lua un 8. Asta pentru că băiatul era lent în asimilarea informațiilor. Avea nevoie să își antreneze logica și gândirea analitică, astfel încât să își poată formula mai clar gândurile. Dintre toate hobby-urile sale, cel mai mult îi plăcea să programeze. După o lună de lecții la Upkid, media lui Costel a crescut cu 1,5! Nu se chinuie să memoreze, ci are o abordare interesantă și provocatoare de a învăța. Costel s-a înscris la concursul de informatică al școlii în urmă cu o săptămână. Știm că va obține cel mai bun punctaj la acest concurs. Tata comentează: \"Eu și soția mea suntem mândri de Costel! Ce băiat inteligent crește. Era și timpul să găsim Școala de programare Upkid”",
+                    "buttonReadFullText": "Citiți toate comentariile"
+                },
+                {
+                    "image": "/images/successStory/4.png",
+                    "name": "Ioana",
+                    "title": "Cum să treci examenele și să intri la o universitate de top?",
+                    "text": "Absolventa noastră, Ioana, a promovat examenele de admitere cu punctaj maxim! Ea a intrat la Universitatea Tehnică din Moldova, una dintre cele mai bune universități din țară. Elevii Școlii Upkid nu învață doar Python, ci și noțiuni de bază din disciplinele tehnice. Mama comentează: \"Ioana este fericită la această universitate și este cea mai bună studentă din grupa ei!",
+                    "buttonReadFullText": "Citiți toate comentariile"
+                },
+                {
+                    "image": "/images/successStory/5.png",
+                    "name": "Sofia",
+                    "title": "Programarea ca o cale de ieșire din dependența de calculator",
+                    "text": "Mama Sofiei a decis să își înscrie fiica sa la lecții de programare pentru că Sofia avea probleme de autocontrol. Ea își petrecea tot timpul liber jucând jocuri și vizionând videoclipuri pe YouTube. Mamei ei, Dana, nu i-a plăcut aceasta. Împreună cu soțul ei, Dana a decis să o înscrie pe fiica ei la programare. După prima oră de curs, Sofia a văzut cât de interesantă poate fi învățarea. Formatul online a fost doar în avantajul ei - era mai plăcut să studieze pe laptop. În loc de jocuri și rețele de socializare, Sofia a început să învețe Python. După două luni de studiu, Sofia a fost inspirată de ideea de a-și face propriul joc. Deja își prezintă noua lucrare și vrea să pună pe internet o versiune beta a jocului. Mama comentează: \"Acum, atât eu, cât și fiica mea suntem fericite: ea se dezvoltă, iar eu sunt liniștită cu privire la viitorul ei",
+                    "buttonReadFullText": "Citiți toate comentariile"
+                }
+            ]
+        },
+        "modalIntroductionLesson": {
+            "title": "Lăsați o cerere",
+            "programsPointsTitle": "Program de curs",
+            "privacy": "Prin trimiterea datelor cu caracter personal sunteți de acord cu politica <a href=\"/privacy\" class=\"\" target=\"_blank\" rel=\"noopener noreferrer\">de confidențialitate</a>"
+        },
+        "modalFreeLesson": {
+            "title": "Lăsați o cerere",
+            "bullets": [
+                "Sa facem cunoștința",
+                "Vom arată cum decurge lecția",
+                "Vom afla interesele copilului"
+            ]
+        },
+        "programs": {
+            "title": "Programe de formare",
+            "description": "Puteți începe la orice vârstă și cu orice nivel de cunoștințe! Putem aranja un orar pentru tine la orice oră și în orice zi care îți convine!",
+            "list": [
+                {
+                    "title": "Introducere în programare",
+                    "description": "Obiectivul cursului: Învățarea noțiunilor de bază ale programării și dezvoltarea gândirii copiilor",
+                    "type": 1,
+                    "classText": "",
+                    "years": "Pentru copii de 9-11 ani",
+                    "programPoints": [
+                        "Crearea de programe și jocuri bazate pe blocuri grafice în Scratch",
+                        "Crearea de algoritmi simpli, utilizarea variabilelor",
+                        "Învățarea condițiilor si a ciclurilor logice",
+                        "Antrenament pentru lucrul în echipă",
+                        "Rezolvarea unor probleme interesante și competiție pentru inteligență"
+                    ]
+                },
+                {
+                    "title": "Crearea de aplicații și jocuri în Python",
+                    "description": "Obiectivul cursului: Învățați să rezolvați probleme complexe și să creați programe",
+                    "type": 2,
+                    "classText": "",
+                    "years": "Pentru copii de 12-14 ani",
+                    "programPoints": [
+                        "Creați algoritmi în limbajul de programare pentru adulți Python și JavaScript",
+                        "Cunoașteți variabilele, ciclurile, condițiile logice, funcțiile și alte elemente de bază",
+                        "Rezolvați probleme complexe cu ajutorul programării",
+                        "Activități practice în cadrul cărora elevii creează aplicații și jocuri și le rulează pe computerul lor"
+                    ]
+                },
+                {
+                    "title": "Dezvoltarea de site-uri web și soluții de afaceri",
+                    "description": "Obiectivul cursului: Crearea unui proiect de absolvire",
+                    "type": 3,
+                    "classText": "",
+                    "years": "Pentru copii de 14-17 ani",
+                    "programPoints": [
+                        "Lucrul cu bazele de date și studiul SQL",
+                        "Rezolvarea unor probleme de afaceri",
+                        "Crearea de interfețe utilizator",
+                        "Fundamentele codului tolerant la erori și ale testării",
+                        "Crearea de site-uri și aplicații web",
+                        "Crearea propriului proiect de absolvire"
+                    ]
+                }
+            ],
+            "buttons": {
+                "program": "Program de curs",
+                "sign": "Înscrie-te"
+            }
+        },
+        "advantages": {
+            "title": "De ce Upkid?",
+            "list": [
+                {
+                    "icon": "target",
+                    "title": "Accent pe practică",
+                    "description": "Cunoștințele sunt asimilate cât mai eficient posibil datorită unei practici intense în cadrul cursurilor noastre. Copiii rămân interesați și își stimulează gândirea cu sarcini interesante",
+                    "image": "/images/advantages/1"
+                },
+                {
+                    "icon": "book-open",
+                    "title": "Metode unice",
+                    "description": "Programul este dezvoltat de programatori reali care au fost implicați în rezolvarea unor probleme de afaceri. Ca urmare, elevii noștri devin profesioniști căutați în marile companii IT",
+                    "image": "/images/advantages/4"
+                },
+                {
+                    "icon": "book-open",
+                    "title": "Instruire online",
+                    "description": "Este convenabil pentru că nu trebuie să vă deplasați nicăieri. Puteți studia de oriunde, tot ce aveți nevoie este un computer sau un laptop. Copiii studiază în grupuri mici, în contact permanent cu profesorul lor. Ei comunica, concurează și obțin noi victorii împreună",
+                    "image": "/images/advantages/2"
+                },
+                {
+                    "icon": "script",
+                    "title": "Proiect de absolvire",
+                    "description": "Elevii nu primesc doar o diplomă ca rezultat al cursului lor, ci și un proiect final. Absolvenții transformă ceea ce au învățat într-un proiect care poate fi adăugat la un portofoliu pentru admiterea la universitate sau pentru un loc de muncă",
+                    "image": "/images/advantages/3"
+                }
+            ]
+        },
+        "formConsultation": {
+            "title": "Primiți o consultare",
+            "pointsList": [
+                "Vom vorbi despre experiențele și hobby-urile copilului dvs.",
+                "Vom vorbi despre programul studiului",
+                "Vom răspunde la toate întrebările dumneavoastre"
+            ],
+            "privacy": "Prin trimiterea datelor cu caracter personal sunteți de acord cu <a href=\"/privacy\" class=\"\" target=\"_blank\" rel=\"noopener noreferrer\">politica de confidențialitate</a>"
+        },
+        "videoReview": {
+            "title": "Как проходят занятия в нашей школе?",
+            "list": [
+                "https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1",
+                "https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1",
+                "https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1",
+                "https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1",
+                "https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1"
+            ]
+        },
+        "reviewStudents": {
+            "title": "Feedback de la studenți",
+            "list": [
+                {
+                    "time": "0:17",
+                    "imagePath": "/images/students/4.png",
+                    "name": "Valeria Ilies",
+                    "description": "15 ani, Valeria, învață în clasa a 9-a, îi place să creeze un plan de dezvoltare a aplicațiilor",
+                    "gif": "/images/students-cases/1.gif",
+                    "video": "https://www.youtube.com/shorts/yROn-1iXWKU"
+                },
+                {
+                    "time": "0:24",
+                    "imagePath": "/images/students/5.png",
+                    "name": "Pislari Victor",
+                    "description": "16 ani, Victor, învață în clasa a 9-a, creează un proiect pentru Olimpiada orașului",
+                    "gif": "/images/students-cases/2.gif",
+                    "video": "https://www.youtube.com/shorts/RgHRlFbAAbE"
+                },
+                {
+                    "time": "0:19",
+                    "imagePath": "/images/students/6.png",
+                    "name": "Cojocaru Igor",
+                    "description": "17 ani, Igor, elev la liceu, intenționează să studieze securitatea cibernetică",
+                    "gif": "/images/students-cases/3.gif",
+                    "video": "https://www.youtube.com/watch?v=cjqFBTa3o18"
+                }
+            ]
+        },
+        "reviewParents": {
+            "title": "Feedbackul părinților",
+            "list": [
+                {
+                    "user": {
+                        "id": 1,
+                        "name": "Recenzie de Ludmila Brînzanu",
+                        "role": "Mama"
+                    },
+                    "rating": 5,
+                    "review": "Bună ziua, mi-am înscris fiica la aceste cursuri și nu regret,profesori bine pregătiți, explicații pe înțelesul tuturor, IT un viitor important, mulțumim",
+                    "socials": {
+                        "facebook": "https://www.facebook.com/upkidrom/posts/pfbid02X2bjDakThbrNxW5kPrq2dbqVADAWHxA3dwdLP68HveEKreDnbWno2RF4vmA8Z32El"
+                    }
+                },
+                {
+                    "user": {
+                        "id": 2,
+                        "name": "Recenzie de Maria Rainea",
+                        "role": "Mama"
+                    },
+                    "rating": 5,
+                    "review": "Sunt foarte mulțumit că am decis să-mi inscriu fiica la cursurile UpKid - a fosto decizie corectă! Profesorii au făcut procesul de învatare simplu si distractiv, astfel incat copiii sa nu se plictiseasca niciodata"
+                },
+                {
+                    "user": {
+                        "id": 3,
+                        "name": "Recenzie de Matei Eftimescu",
+                        "role": "Tata"
+                    },
+                    "rating": 5,
+                    "review": "Am fost impresionat de nivelul ridicatal cursurilor oferite pentru copii la Upkid!Este evident că profesorii au experiența necesară și pasiunea pentru a-i ajutape cei mici să învețe cele mai importante abilități din domeniul IT!"
+                },
+                {
+                    "user": {
+                        "id": 4,
+                        "name": "Recenzie de Victor Șchiopu",
+                        "role": "Alumnus"
+                    },
+                    "rating": 5,
+                    "review": "Eu am făcut studiile la Școala de Programatori UpKid și sunt extrem de mulțumit. Aceste cursuri m-au ajutat foarte mult pentru a înțelege mai bine domeniul IT. UpKid este o școală de programatori foarte populară și bine-cunoscută în comunitatea de dezvoltatori. Eu, în calitate de elev apreciez în mod special abordarea lor practică și hands-on, care îi ajută să aplice ceea ce au învățat într-un mod realist și să dezvolte o înțelegere mai profundă a subiectelor predate. Profesorii și mentori de la UpKid sunt, de asemenea, foarte experimentați și talentați, fiind capabili să ghideze elevii prin probleme și să ofere feedback constructiv pentru a-și îmbunătăți abilitățile\n\nLe spun un mare mulțumesc profesorilor și succese viitorilor elevi!",
+                    "socials": {
+                        "facebook": "https://www.facebook.com/victor.schiopu.7777/posts/pfbid021dHTbPqrtfx6JhFmtupNRoNqoXx6QDizSgANvCoiX3jLALVG1rykpMwe1LZZ9Cvql"
+                    }
+                }
+            ],
+            "buttonReadFull": "Citiți toate comentariile"
+        },
+        "teacher": {
+            "title": "Profesorii noștri",
+            "list": [
+                {
+                    "id": 7,
+                    "name": "Șchiopu Alina",
+                    "description": "Motivația principală de a preda copiilor este curiozitatea lor, deoarece doar prin curiozitatea descoperim lucruri noi",
+                    "experience": "5 ani experiență în predare"
+                },
+                {
+                    "id": 8,
+                    "name": "Mîndru Eugen",
+                    "description": "Voi fi un profesor bun pentru copilul dumneavoastră, deoarece am o baza de cunoștințe teoretice pe care știu cum sa o folosesc in partea practică",
+                    "experience": "5 ani experiență în predare"
+                },
+                {
+                    "id": 9,
+                    "name": "Macovei Alexandru",
+                    "description": "Primesc o plăcere deosebită că am ocazia să împărtășesc cunoștințele pe care le-am acumulat pe parcursul acestor ani",
+                    "experience": "5 ani experiență în predare"
+                },
+                {
+                    "id": 10,
+                    "name": "Șchiopu Felicia",
+                    "description": "Mă bucur să împărtășesc cunoștințele acumulate în ani cu copiii și îi ajut să învețe ceva nou. Lucrul cu fiecare copil este o experiență excepțională",
+                    "experience": "5 ani experiență în predare"
+                },
+                {
+                    "id": 11,
+                    "name": "Adrian Chiriăcu",
+                    "description": "Învăț copiii să programeze pentru a-i inspira să creeze proiecte inovatoare și să descopere noi tehnologii",
+                    "experience": "8 ani experiență în predare"
+                },
+                {
+                    "id": 12,
+                    "name": "Aureliu Ciobanu",
+                    "description": "Studiez rețele neuronale, lucrez cu date mari. Îmi place să explic informații, pentru a le înțelege mai bine și eu",
+                    "experience": "7 ani experiență în predare"
+                }
+            ]
+        },
+        "questions": {
+            "title": "Răspunsuri la întrebări",
+            "list": [
+                {
+                    "title": "Cât de des au loc cursurile și cât timp durează acestea?",
+                    "answer": "O dată pe săptămână, timp de o oră sau o oră și jumătate."
+                },
+                {
+                    "title": "Câți elevi pe grupă?",
+                    "answer": "În medie, aproximativ zece elevi"
+                },
+                {
+                    "title": "Se eliberează un certificat de absolvire?",
+                    "answer": "Da, absolvenții Upkid primesc o diplomă de la școala de programare online. În diplomă este menționat programul studiat"
+                },
+                {
+                    "title": "De ce calculator am nevoie?",
+                    "answer": "Orice calculator sau laptop este suficient. Sistemul de operare și hardware-ul nu sunt importante. Veți avea nevoie, de asemenea, de un microfon și de căști, dar laptopurile le au de obicei încorporate. Cu toate acestea, o cască normală este cea mai confortabilă opțiune. Webcam opțional, dar recomandat."
+                },
+                {
+                    "title": "Ce se întâmplă dacă copilul meu lipsește de la o lecție?",
+                    "answer": "În cazul în care copilul lipsește de la o lecție, atunci aceasta este recuperată individual cu profesorul. Nici o lecție nu se va pierde sau retrage din contul dvs pentru absențe"
+                },
+                {
+                    "title": "Unde vă aflați?",
+                    "answer": "Suntem o școală online, așa că lucrăm oriunde există acces la internet. Învățarea online s-a dovedit a fi la fel de eficientă ca și învățarea față în față. Copiii îl pot auzi și vedea pe profesor, acesta explică materialul pe tabla electronică. Copiii vorbesc între ei în grup. Profesorul se conectează la computerul copilului pentru a verifica rezolvarea sarcinilor și pentru a-l ajuta dacă ceva nu funcționează"
+                }
+            ]
+        },
+        "formFreeLesson": {
+            "title": "Solicitați o lecție introductivă gratuită",
+            "description": "După lecție de probă, veți putea lua decizia finală\n",
+            "bulletsTitle": "La prima lecție",
+            "bullets": [
+                "Facem cunoștință",
+                "Vom arăta cum decurg lecțiile la noi",
+                "Vom afla interesele copilului"
+            ],
+            "privacy": "Prin trimiterea datelor cu caracter personal sunteți de acord cu politica <a href=\"/privacy\" class=\"\" target=\"_blank\" rel=\"noopener noreferrer\">de confidențialitate</a>"
+        },
+        "footer": {
+            "menu": {
+                "program": "Programul de studii",
+                "about": "Despre școală",
+                "feedback": "Recenzii",
+                "faq": "Întrebări și răspunsuri"
+            }
+        },
+        "response": {
+            "title": "Cererea a fost trimisă!",
+            "description": "Așteptați un răspuns din partea operatorului nostru - vă vom contacta în curând"
+        },
+        "privacy": "Prin trimiterea datelor cu caracter personal sunteți de acord cu politica <a href=\"/privacy\" class=\"\" target=\"_blank\" rel=\"noopener noreferrer\">de confidențialitate</a>",
+        "notFound": {
+            "text": "Ne pare rău, pagina pe care ați solicitat-o nu a putut fi găsită. Este posibil să fi urmat un link incorect sau resursa a fost eliminată.\n",
+            "button": "Înapoi la pagina principală"
+        }
+    }
+}

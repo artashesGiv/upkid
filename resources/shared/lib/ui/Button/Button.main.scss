@@ -1,0 +1,53 @@
+.button {
+    $b: &;
+
+    &.is-disabled {
+        opacity: 0.5;
+    }
+
+    @include media-hover-device {
+        transition: 0.3s ease;
+        transition-property: color, background-color, border-color, opacity;
+
+        &--view {
+            &-brand {
+                &:hover {
+                    background-color: var(--controlBrandBackgroundHover);
+                }
+            }
+
+            &-outline {
+                &:hover {
+                    color: var(--controlOutlineBrandTextHovert);
+                    border-color: var(--controlOutlineBrandBorderHover);
+                }
+            }
+
+            &-secondary-brand {
+                &:hover {
+                    color: var(--controlBrandTextHover);
+                    background-color: var(--controlSecondaryBackgroundHover);
+                }
+            }
+
+            &-secondary-outline {
+                &:hover {
+                    color: var(--controlBrandTextHover);
+                    border-color: var(--controlOutlineSecondaryBorderHover);
+                }
+            }
+
+            &-secondary-brand-outline {
+                &:hover {
+                    opacity: 0.5;
+                }
+            }
+
+            &-flat {
+                &:hover {
+                    opacity: 0.6;
+                }
+            }
+        }
+    }
+}

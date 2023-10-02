@@ -1,0 +1,7 @@
+.rating {
+    position: relative;
+
+    &.is-active {
+        cursor: pointer;
+    }
+}

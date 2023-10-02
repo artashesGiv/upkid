@@ -1,0 +1,125 @@
+@keyframes dinoOutline {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.main-view {
+    &__title {
+        @include marginLevel(bottom, green);
+        @include fontSize(h1, (weight: 700));
+
+        white-space: pre-wrap;
+    }
+
+    &__description {
+        @include fontSize(p1);
+
+        margin-bottom: toRem(163);
+        color: var(--textSurface);
+    }
+
+    &__image {
+        position: absolute;
+        width: toRem(266);
+        height: toRem(283);
+        bottom: toRem(-36);
+
+        img {
+            width: toRem(266);
+            height: toRem(283);
+        }
+
+        @include media-maxMobile {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    &__button {
+        position: relative;
+        z-index: 0;
+    }
+
+    @include media-maxMobile {
+        &__button {
+            width: 100%;
+        }
+    }
+
+    @include media-tablet {
+        &__title {
+            @include marginLevel(bottom, pink);
+        }
+
+        &__description {
+            @include marginLevel(bottom, purple);
+
+            width: toRem(396);
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &__image {
+            width: toRem(244);
+            height: toRem(270);
+            right: toRem(-37);
+            bottom: toRem(-16);
+
+            img {
+                width: toRem(244);
+                height: toRem(270);
+            }
+        }
+    }
+
+    @include media-desktop {
+        padding-top: toRem(192);
+        padding-bottom: toRem(136);
+
+        &__dino {
+            position: absolute;
+            right: toRem(114);
+            bottom: toRem(9);
+
+            &-title {
+                position: absolute;
+                top: toRem(-20);
+                right: toRem(-51);
+                transform: rotate(22deg);
+            }
+
+            &-image {
+                position: relative;
+                width: toRem(215);
+                height: toRem(187);
+            }
+
+            &-main,
+            &-hover {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+            }
+
+            &-main {
+                cursor: pointer;
+                z-index: 2;
+            }
+
+            &-hover {
+                z-index: 1;
+                animation: dinoOutline 2s linear infinite;
+            }
+        }
+    }
+}

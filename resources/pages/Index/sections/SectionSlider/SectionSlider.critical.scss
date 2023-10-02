@@ -1,0 +1,52 @@
+.section-slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+
+    @include spacing(gray);
+
+    &__header {
+        @include marginLevel(bottom, purple);
+
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__buttons {
+        @include media-maxMobileLate {
+            display: none;
+        }
+    }
+
+    &__pagination {
+        display: flex;
+        justify-content: center;
+
+        @include marginLevel(top, blue);
+
+        @include media-tabletLate {
+            display: none;
+        }
+    }
+
+    @include media-tablet {
+        @include spacing(beige);
+
+        &__header {
+            justify-content: space-between;
+        }
+
+        &__button {
+            & + & {
+                margin-left: toRem(12);
+            }
+        }
+    }
+
+    @include media-desktop {
+        &__header {
+            @include marginLevel(bottom, gray);
+        }
+    }
+}

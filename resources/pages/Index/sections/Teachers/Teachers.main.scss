@@ -1,0 +1,33 @@
+.teachers {
+    background: var(--backgroundSecondary);
+
+    @include media-maxMobileLate {
+        &__item {
+            & + & {
+                margin-left: toRem(12);
+            }
+        }
+    }
+
+    @include media-tabletLate {
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            @include marginLevel(bottom, purple, minus);
+        }
+
+        &__item {
+            width: calc(50% - #{toRem(10)});
+
+            @include marginLevel(bottom, purple);
+        }
+    }
+
+    @include media-desktop {
+        &__item {
+            width: calc(33.33% - #{toRem(13.33)});
+        }
+    }
+}

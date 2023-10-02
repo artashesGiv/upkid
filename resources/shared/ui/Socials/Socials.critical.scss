@@ -1,0 +1,17 @@
+.socials {
+    display: flex;
+
+    &__item {
+        & + & {
+            margin-left: toRem(16);
+        }
+    }
+
+    @include media-tabletLate {
+        &__item {
+            & + & {
+                margin-left: toRem(8);
+            }
+        }
+    }
+}

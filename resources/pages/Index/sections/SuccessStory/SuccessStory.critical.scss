@@ -1,0 +1,13 @@
+.success-story-section {
+    &__slide {
+        width: auto;
+
+        & + & {
+            margin-left: toRem(12);
+
+            @include media-tablet {
+                margin-left: toRem(20);
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.video-review-card {
+    $b: &;
+
+    &__overflow,
+    &__play {
+        transition: 0.3s ease;
+        transition-property: opacity;
+    }
+
+    @include media-hover-device {
+        cursor: pointer;
+
+        &:hover {
+            #{$b}__overflow {
+                opacity: 0.3;
+            }
+
+            #{$b}__play {
+                opacity: 0.5;
+            }
+        }
+    }
+}

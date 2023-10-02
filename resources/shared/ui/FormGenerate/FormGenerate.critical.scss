@@ -1,0 +1,40 @@
+.form-generate {
+    display: flex;
+
+    &--direction {
+        &-row {
+            flex-direction: row;
+        }
+
+        &-column {
+            flex-direction: column;
+        }
+    }
+
+    &__input {
+        flex-grow: 1;
+    }
+
+    &__policy {
+        @include marginLevel(top, green);
+        @include fontSize(p4);
+
+        text-align: center;
+        opacity: 0.4;
+
+        &--view {
+            &-secondary {
+                color: var(--textSurface);
+            }
+
+            &-base {
+                color: var(--textBase);
+            }
+        }
+
+        @include media-maxMobileLate {
+            margin-left: toRem(14);
+            margin-right: toRem(14);
+        }
+    }
+}

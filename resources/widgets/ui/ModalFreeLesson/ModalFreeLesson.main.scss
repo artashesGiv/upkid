@@ -1,0 +1,101 @@
+.modal-free-lesson {
+    // For z-index under overlay
+    position: relative;
+    background-color: var(--backgroundBrand);
+    display: flex;
+    flex-direction: column;
+
+    &__form,
+    &__view {
+        padding-left: toRem(20);
+        padding-right: toRem(20);
+    }
+
+    &__view {
+        padding-top: toRem(24);
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: toRem(24);
+        box-sizing: border-box;
+    }
+
+    &__title {
+        @include marginLevel(bottom, pink);
+
+        // FIXME: Replace if need into title component
+        font-weight: 700;
+    }
+
+    &__icon {
+        font-size: toRem(20);
+    }
+
+    &__icon,
+    &__item span {
+        display: inline-block;
+        vertical-align: middle;
+        color: var(--textSurface);
+    }
+
+    &__item {
+        & + & {
+            @include marginLevel(top, yellow);
+        }
+
+        span {
+            @include fontSize(p1);
+
+            margin-left: toRem(8);
+        }
+    }
+
+    @include media-maxMobile {
+        &__title {
+            padding-right: toRem(24);
+        }
+
+        &__form {
+            @include marginLevel(top, purple);
+        }
+    }
+
+    @include media-tablet {
+        flex-direction: row;
+        background-color: var(--backgroundSurface);
+
+        &__form,
+        &__view {
+            position: relative;
+            width: 50%;
+            padding: toRem(32);
+        }
+
+        &__title {
+            @include marginLevel(bottom, blue);
+        }
+
+        &__view {
+            background-color: var(--backgroundBrand);
+        }
+
+        &__image {
+            position: absolute;
+            font-size: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+
+            img {
+                min-width: 100%;
+            }
+        }
+    }
+
+    @include media-tabletLate {
+        width: toRem(684);
+    }
+}

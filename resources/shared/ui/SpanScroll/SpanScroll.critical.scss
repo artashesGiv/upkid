@@ -1,0 +1,57 @@
+.snap-scroll {
+    &__main {
+        @include extend-container();
+
+        display: flex;
+        align-items: stretch;
+
+        @include media-maxTablet {
+            overflow-x: scroll;
+            overflow-y: hidden;
+            padding-bottom: toRem(10);
+            margin-bottom: toRem(-10);
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+            white-space: nowrap;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+
+            &.is-scrolled {
+                -webkit-scroll-snap-type: x mandatory;
+                scroll-snap-type: x mandatory;
+                scroll-behavior: smooth;
+            }
+
+            &.is-scrolled > * {
+                -webkit-scroll-snap-align: center;
+                scroll-snap-align: center;
+            }
+
+            & > * {
+                white-space: normal;
+            }
+        }
+    }
+
+    &__bullets {
+        @include marginLevel(top, pink);
+
+        display: flex;
+        justify-content: center;
+    }
+
+    &__bullet {
+        width: 8px;
+        height: 8px;
+        position: relative;
+        transform: scale(1);
+        background-color: var(--backgroundTeacher);
+        border-radius: 50%;
+
+        & + & {
+            margin-left: toRem(8);
+        }
+    }
+}

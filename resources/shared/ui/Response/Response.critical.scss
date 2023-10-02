@@ -1,0 +1,51 @@
+.response {
+    $b: &;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__icon {
+        font-size: toRem(88);
+    }
+
+    &__title {
+        @include marginLevel(top, cobalt);
+    }
+
+    &__content {
+        text-align: center;
+    }
+
+    &__description {
+        @include marginLevel(top, green);
+        @include fontSize(p1);
+
+        max-width: toRem(400);
+    }
+
+    &--view {
+        &-surface {
+            color: var(--textSurface);
+        }
+
+        &-base {
+            #{$b}__icon {
+                color: var(--textBrand);
+            }
+
+            color: var(--textBase);
+        }
+    }
+
+    @include media-tablet {
+        &--direction {
+            &-row {
+
+                #{$b}__description {
+                    @include marginLevel(top, yellow);
+                }
+            }
+        }
+    }
+}

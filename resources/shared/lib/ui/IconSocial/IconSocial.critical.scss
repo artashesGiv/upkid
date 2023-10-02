@@ -1,0 +1,19 @@
+.icon-social {
+    font-size: toRem(18);
+    display: inline-block;
+    width: toRem(18);
+
+    i {
+        display: block;
+    }
+
+    &--view {
+        &-base {
+            color: var(--textBase);
+        }
+
+        &-surface {
+            color: var(--textSurface);
+        }
+    }
+}

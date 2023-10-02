@@ -1,0 +1,5 @@
+.modal-review {
+    @include media-tabletLate {
+        width: toRem(560);
+    }
+}

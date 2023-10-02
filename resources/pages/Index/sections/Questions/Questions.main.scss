@@ -1,0 +1,34 @@
+.questions {
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        & + & {
+            @include marginLevel(top, yellow);
+        }
+    }
+
+    @include media-tabletLate {
+        &__item {
+            min-height: unset;
+
+            & + & {
+                @include marginLevel(top, green);
+            }
+        }
+    }
+
+    @include media-desktop {
+        &__list {
+            width: 66.66%;
+            margin: 0 auto;
+        }
+
+        &__item {
+            & + & {
+                @include marginLevel(top, blue);
+            }
+        }
+    }
+}

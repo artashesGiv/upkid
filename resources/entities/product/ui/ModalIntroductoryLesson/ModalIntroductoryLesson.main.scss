@@ -1,0 +1,165 @@
+.modal-introductory-lesson {
+    &__view,
+    &__form {
+        padding-left: toRem(20);
+        padding-right: toRem(20);
+    }
+
+    &__view {
+        @include paddingLevel(top, cobalt);
+        @include paddingLevel(bottom, purple);
+
+        background-color: var(--backgroundSurface);
+    }
+
+    &__inner {
+        width: 100%;
+    }
+
+    &__form {
+        @include paddingLevel(top, purple);
+        @include paddingLevel(bottom, purple);
+
+        background-color: var(--backgroundBrand);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+    }
+
+    &__tags {
+        @include marginLevel(bottom, blue);
+
+        display: flex;
+    }
+
+    &__tag {
+        & + & {
+            margin-left: toRem(6);
+        }
+    }
+
+    &__title {
+        @include marginLevel(bottom, green);
+
+        &--form {
+            @include marginLevel(bottom, cobalt);
+        }
+    }
+
+    &__sub-title {
+        @include fontSize(p1);
+
+        &--goal {
+            @include marginLevel(bottom, green);
+        }
+
+        &--point {
+            position: relative;
+            //list-style-type: disc;
+            margin-left: toRem(20);
+
+            &::before {
+                position: absolute;
+                content: '';
+                width: toRem(4);
+                height: toRem(4);
+                border-radius: 50%;
+                left: toRem(-14);
+                top: toRem(7);
+                background-color: var(--textBase);
+            }
+        }
+    }
+
+    &__program {
+        @include marginLevel(top, yellow);
+    }
+
+    &__policy {
+        @include marginLevel(top, green);
+        @include fontSize(p4);
+
+        color: var(--textSurface);
+        text-align: center;
+        opacity: 0.4;
+
+        @include media-maxMobileLate {
+            margin-left: toRem(14);
+            margin-right: toRem(14);
+        }
+    }
+
+    @include media-tabletLate {
+        display: flex;
+        width: toRem(684);
+
+        &__view,
+        &__form {
+            padding-left: toRem(24);
+            padding-right: toRem(24);
+            box-sizing: border-box;
+
+            @include paddingLevel(top, purple);
+            @include paddingLevel(bottom, purple);
+        }
+
+        &__view {
+            width: toRem(400);
+        }
+
+        &__form {
+            width: toRem(284);
+            display: flex;
+            align-items: center;
+        }
+
+        &__title {
+            @include marginLevel(bottom, pink);
+
+            &--form {
+                @include marginLevel(bottom, purple);
+            }
+        }
+
+        &__sub-title {
+            &--goal {
+                @include marginLevel(bottom, pink);
+            }
+
+            &--point {
+                margin-left: toRem(24);
+            }
+        }
+
+        &__program {
+            @include marginLevel(top, green);
+        }
+    }
+
+    @include media-desktop {
+        width: toRem(860);
+
+        &__form {
+            width: toRem(332);
+            padding-left: toRem(30);
+            padding-right: toRem(30);
+        }
+
+        &__view {
+            width: toRem(528);
+            padding-left: toRem(32);
+            padding-right: toRem(32);
+        }
+
+        &__policy {
+            margin-left: toRem(10);
+            margin-right: toRem(10);
+        }
+
+        &__tags {
+            @include marginLevel(bottom, cobalt);
+        }
+    }
+}

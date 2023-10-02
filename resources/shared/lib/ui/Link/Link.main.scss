@@ -1,0 +1,10 @@
+.link {
+    transition: 0.3s ease;
+    transition-property: opacity;
+
+    @include media-hover-device {
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+}

@@ -1,0 +1,45 @@
+@keyframes slide {
+    0% {
+        width: 35.18%;
+    }
+
+    50% {
+        width: 100%;
+    }
+
+    100% {
+        width: 35.18%;
+    }
+}
+
+.main-ready {
+    padding-top: toRem(241);
+
+    &__notify {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: var(--backgroundSurface);
+        width: toRem(318);
+        border-radius: toRem(24);
+        padding: toRem(24);
+        box-sizing: border-box;
+
+        p {
+            @include marginLevel(bottom, brown);
+        }
+    }
+
+    &__wrapper {
+        animation: slide 2s infinite;
+        min-width: toRem(50);
+        width: 100%;
+        text-align: right;
+    }
+
+    &__mouse {
+        display: inline-block;
+        width: toRem(95);
+        height: toRem(95);
+    }
+}

@@ -1,0 +1,67 @@
+.banner {
+    border-radius: toRem(24);
+    background-color: var(--backgroundSecondary);
+    padding: toRem(24);
+    box-sizing: border-box;
+
+    &__text {
+        @include marginLevel(bottom, gray);
+
+        p {
+            @include fontSize(p1);
+
+            color: var(--textBase);
+        }
+    }
+
+    @include media-maxMobileLate {
+        display: flex;
+        flex-direction: column;
+        min-height: toRem(388);
+        align-items: flex-start;
+
+        &__wrapper {
+            margin-top: auto;
+        }
+
+        &__text {
+            h1 {
+                @include marginLevel(bottom, green);
+            }
+        }
+
+        &__decoration {
+            display: none;
+        }
+    }
+
+    @include media-tabletLate {
+        padding: toRem(40);
+
+        &__text {
+            h1 {
+                @include marginLevel(bottom, blue);
+            }
+        }
+
+        &__wrapper {
+            position: relative;
+            display: inline-block;
+        }
+
+        &__decoration {
+            width: toRem(33);
+            position: absolute;
+            right: toRem(-25);
+            top: toRem(-25);
+        }
+    }
+
+    @include media-desktop {
+        padding: toRem(48);
+
+        &__text {
+            max-width: toRem(433);
+        }
+    }
+}

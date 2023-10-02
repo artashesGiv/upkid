@@ -1,0 +1,144 @@
+.success-story-card {
+    $b: &;
+
+    background-color: var(--backgroundSecondary);
+    border-radius: $borderRadiusL;
+    width: toRem(274);
+    height: toRem(450);
+
+    &--cut {
+        #{$b}__text {
+            flex-grow: 1;
+            overflow: hidden;
+        }
+    }
+
+    &__student {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: toRem(206);
+        box-sizing: border-box;
+    }
+
+    &__decoration {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    &__image {
+        @include center(horizontal);
+
+        width: 100%;
+        border-radius: $borderRadiusL;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__main {
+        @include paddingLevel(vertical, blue);
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+        height: toRem(244);
+        box-sizing: border-box;
+    }
+
+    &__title {
+        @include marginLevel(top, pink);
+    }
+
+    &__text {
+        @include fontSize(p1);
+        @include marginLevel(top, green);
+
+        width: 100%;
+    }
+
+    &__read-full {
+        @include fontSize(p1, (weight: 700));
+
+        position: absolute;
+        bottom: toRem(18);
+        width: 100%;
+        color: var(--textBrand);
+        background-color: var(--backgroundSurface);
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: toRem(54);
+            background: linear-gradient(360deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
+            top: toRem(-54);
+            left: 0;
+        }
+    }
+
+    @include media-maxMobileLate {
+        &__student {
+            @include paddingLevel(top, blue);
+        }
+
+        &__image {
+            top: toRem(20);
+        }
+
+        &__main {
+            border-radius: $borderRadiusL;
+            border: 1px solid var(--borderSecondary);
+            background-color: var(--backgroundSurface);
+            padding-left: toRem(20);
+            padding-right: toRem(20);
+        }
+    }
+
+    @include media-tabletLate {
+        display: flex;
+        width: toRem(684);
+        height: toRem(298);
+
+        &--cut {
+            #{$b}__text {
+                height: toRem(120);
+            }
+        }
+
+        &__student {
+            width: toRem(306);
+            height: 100%;
+            overflow: visible;
+        }
+
+        &__image {
+            width: 100%;
+            bottom: 0;
+        }
+
+        &__main {
+            @include paddingLevel(vertical, purple);
+
+            width: toRem(378);
+            padding-right: toRem(32);
+            height: 100%;
+            box-sizing: border-box;
+        }
+
+        &__read-full {
+            background-color: var(--backgroundSecondary);
+            bottom: toRem(32);
+
+            &::before {
+                background: linear-gradient(360deg, #f8f8fc 0%, rgba(248, 248, 252, 0) 100%);
+            }
+        }
+    }
+}

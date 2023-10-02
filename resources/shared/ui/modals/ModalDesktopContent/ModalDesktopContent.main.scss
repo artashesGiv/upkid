@@ -1,0 +1,21 @@
+.modal-desktop-content {
+    $b: &;
+
+    &__wrapper {
+        @include paddingLevel(top, purple);
+        @include paddingLevel(bottom, purple);
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    &__slot {
+        min-width: toRem(360);
+        border-radius: $borderRadiusM;
+        overflow: hidden;
+        min-height: toRem(24);
+        width: 100%;
+        box-sizing: border-box;
+    }
+}

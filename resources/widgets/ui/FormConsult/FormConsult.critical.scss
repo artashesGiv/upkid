@@ -1,0 +1,59 @@
+.form-consult {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--backgroundBrand);
+    box-sizing: border-box;
+    color: var(--textSurface);
+
+    @include paddingLevel(vertical, purple);
+
+    &__description {
+        @include marginLevel(top, pink);
+        @include fontSize(p1);
+    }
+
+    &__form {
+        @include marginLevel(top, purple);
+    }
+
+    &__privacy {
+        @include marginLevel(top, green);
+        @include fontSize(p4);
+
+        opacity: 0.4;
+    }
+
+    @include media-tabletLate {
+        position: relative;
+        padding: 0 toRem(40);
+        border-radius: $borderRadiusL;
+        overflow: hidden;
+
+        @include paddingLevel(vertical, brown);
+
+        &__privacy {
+            @include marginLevel(top, yellow);
+        }
+
+        &__decoration {
+            position: absolute;
+            top: toRem(-215);
+            right: toRem(-170);
+        }
+    }
+
+    @include media-desktop {
+        &__decoration {
+            top: toRem(-185);
+            right: toRem(-105);
+        }
+    }
+
+    @media (min-width: 1400px) {
+        &__decoration {
+            top: toRem(-120);
+            right: toRem(-80);
+        }
+    }
+}

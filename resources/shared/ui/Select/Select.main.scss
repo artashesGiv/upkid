@@ -1,0 +1,38 @@
+.select {
+    &__wrapper--head,
+    &__option {
+        cursor: pointer;
+    }
+
+    &__option {
+        &--list {
+            transition: 0.3s ease;
+            transition-property: background-color;
+        }
+    }
+
+    &__wrapper {
+        &--head {
+            transition: 0.3s ease;
+            transition-property: background-color;
+        }
+    }
+
+    @include media-hover-device {
+        &__option {
+            &--list {
+                &:hover {
+                    background-color: var(--controlSecondaryBackgroundHover);
+                }
+            }
+        }
+
+        &__wrapper {
+            &--head {
+                &:hover {
+                    background-color: var(--controlSecondaryBackgroundHover);
+                }
+            }
+        }
+    }
+}

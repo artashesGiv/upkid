@@ -1,0 +1,112 @@
+.select {
+    $b: &;
+
+    position: relative;
+    display: inline-block;
+
+    &__wrapper {
+        box-sizing: border-box;
+
+        &--list {
+            position: absolute;
+            box-sizing: border-box;
+            left: 0;
+            top: 100%;
+            width: 100%;
+
+            @include marginLevel(top, yellow);
+        }
+
+        &--head {
+            background-color: var(--backgroundSecondary);
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &__option {
+        padding: toRem(6) toRem(18);
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+        text-align: center;
+
+        &--list {
+            background-color: var(--backgroundSecondary);
+        }
+
+        p {
+            font-weight: 700;
+            width: 100%;
+            //margin-left: toRem(6);
+        }
+    }
+
+    &--size {
+        &-s {
+            width: toRem(56);
+            #{$b} {
+                &__option {
+                    p {
+                        @include fontSize(p3);
+                    }
+
+                    &--list {
+                        &:first-child {
+                            padding-top: toRem(14);
+                            border-radius: toRem(16) toRem(16) 0 0;
+                        }
+
+                        &:last-child {
+                            padding-bottom: toRem(14);
+                            border-radius: 0 0 toRem(16) toRem(16);
+                        }
+                    }
+                }
+
+                &__wrapper {
+                    border-radius: toRem(16);
+
+                    &--head {
+                        height: toRem(44);
+                        padding-top: toRem(14 - 6);
+                        padding-bottom: toRem(14 - 6);
+                    }
+                }
+            }
+        }
+
+        &-m {
+            width: toRem(84);
+            #{$b} {
+                &__option {
+                    p {
+                        @include fontSize(p1);
+                    }
+
+                    &--list {
+                        &:first-child {
+                            padding-top: toRem(17);
+                            border-radius: toRem(18) toRem(18) 0 0;
+                        }
+
+                        &:last-child {
+                            padding-bottom: toRem(17);
+                            border-radius: 0 0 toRem(18) toRem(18);
+                        }
+                    }
+                }
+
+                &__wrapper {
+                    border-radius: toRem(18);
+
+                    &--head {
+                        height: toRem(56);
+                        padding-top: toRem(17 - 6);
+                        padding-bottom: toRem(17 - 6);
+                    }
+                }
+            }
+        }
+    }
+}

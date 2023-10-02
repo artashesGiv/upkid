@@ -1,0 +1,16 @@
+.logo {
+    display: inline-flex;
+    font-size: 0;
+
+    img {
+        height: toRem(25);
+        width: toRem(60);
+    }
+
+    @include media-tabletLate {
+        img {
+            height: toRem(36);
+            width: toRem(86);
+        }
+    }
+}

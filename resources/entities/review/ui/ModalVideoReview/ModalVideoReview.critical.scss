@@ -1,0 +1,116 @@
+.modal-video-review {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__card,
+    &__gif {
+        border-radius: $borderRadiusL;
+        width: 100%;
+    }
+
+    &__project {
+        width: 100%;
+
+        @include media-maxMobileLate {
+            padding-left: toRem(20);
+            padding-right: toRem(20);
+            box-sizing: border-box;
+        }
+    }
+
+    &__card {
+        box-sizing: border-box;
+        background-color: var(--backgroundSurface);
+        padding: 0 toRem(20);
+        order: -1;
+
+        @include paddingLevel(top, blue);
+        @include paddingLevel(bottom, cobalt);
+    }
+
+    &__video {
+        border-radius: $borderRadiusXS;
+        overflow: hidden;
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        position: relative;
+        z-index: 1;
+
+        &-main {
+            width: 100%;
+            position: relative;
+            z-index: 0;
+        }
+    }
+
+    &__name {
+        font-weight: 500;
+
+        @include fontSize(h3);
+        @include marginLevel(top, blue);
+    }
+
+    &__description {
+        color: var(--textSecondary);
+
+        @include fontSize(p1);
+        @include marginLevel(top, yellow);
+    }
+
+    @include media-maxMobileLate {
+        background-color: var(--backgroundSurface);
+        border-radius: $borderRadiusM $borderRadiusM 0 0;
+
+        @include paddingLevel(bottom, purple);
+
+        &__video {
+            aspect-ratio: 16 / 9;
+        }
+    }
+
+    @include media-tabletLate {
+        width: toRem(508);
+
+        &__card {
+            @include paddingLevel(vertical, cobalt);
+        }
+
+        &__gif {
+            @include marginLevel(top, blue);
+        }
+
+        &__video {
+            height: toRem(258);
+        }
+
+        &__description {
+            @include marginLevel(top, green);
+        }
+    }
+
+    @include media-desktop {
+        flex-direction: row;
+        width: 100%;
+
+        &__gif,
+        &__card {
+            height: toRem(380);
+        }
+
+        &__gif {
+            margin: 0;
+            width: toRem(366);
+        }
+
+        &__video {
+            height: toRem(240);
+        }
+
+        &__card {
+            width: toRem(474);
+            margin-left: toRem(20);
+            order: 0;
+        }
+    }
+}

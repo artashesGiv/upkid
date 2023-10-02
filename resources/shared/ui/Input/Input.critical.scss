@@ -1,0 +1,146 @@
+.input {
+    $b: &;
+
+    position: relative;
+
+    &__value {
+        @include fontSize(p1);
+
+        padding-left: toRem(18);
+        padding-right: toRem(18);
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    &__error {
+        @include center(vertical);
+
+        right: toRem(18);
+    }
+
+    &__icon {
+        color: var(--textCritical);
+    }
+
+    &.is-error {
+        &.input--size {
+            &-m {
+                #{$b}__value {
+                    padding-right: toRem(48);
+                }
+
+                #{$b}__icon {
+                    font-size: toRem(18);
+                }
+
+                #{$b}__error {
+                    height: toRem(18);
+                }
+            }
+
+            &-l {
+                #{$b}__value {
+                    padding-right: toRem(50);
+                }
+
+                #{$b}__icon {
+                    font-size: toRem(20);
+                }
+
+                #{$b}__error {
+                    height: toRem(20);
+                }
+            }
+        }
+    }
+
+    &--view {
+        &-base {
+            #{$b} {
+                &__value {
+                    background-color: var(--backgroundSurface);
+                    box-shadow: inset 0 0 0 1px var(--borderBase);
+                    color: var(--textBase);
+                    caret-color: var(--textBrand);
+
+                    &::placeholder {
+                        color: var(--textSecondary);
+                    }
+                }
+            }
+
+            &.is-error {
+                #{$b} {
+                    &__value {
+                        box-shadow: inset 0 0 0 1px var(--borderCritical) !important;
+                    }
+                }
+            }
+
+            &.is-disabled {
+                opacity: 0.6;
+            }
+        }
+
+        &-secondary {
+            #{$b} {
+                &__value {
+                    background-color: var(--backgroundSurfaceAlfa);
+                    color: var(--textSurface);
+                    caret-color: var(--textSurface);
+                    border: 1px solid transparent;
+
+                    &::placeholder {
+                        color: var(--textSurface);
+                        opacity: 0.6;
+                    }
+                }
+            }
+
+            &.is-error {
+                #{$b} {
+                    &__value {
+                        border-color: hsla-new($backgroundSurface, (a: 0.5));
+                        box-shadow: inset 0 0 0 1px var(--borderCritical) !important;
+                    }
+                }
+            }
+
+            &.is-disabled {
+                #{$b} {
+                    &__value {
+                        color: hsla-new($textSurface, (a: 0.3));
+
+                        &::placeholder {
+                            color: var(--textSurface);
+                            opacity: 0.3;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &--size {
+        &-m {
+            #{$b} {
+                &__value {
+                    border-radius: toRem(18);
+                    height: toRem(52);
+                    line-height: toRem(52);
+                }
+            }
+        }
+
+        &-l {
+            #{$b} {
+                &__value {
+                    border-radius: toRem(20);
+                    height: toRem(60);
+                    line-height: toRem(60);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,75 @@
+.youtube-lazy {
+    display: inline-block;
+
+    &__preview {
+        position: relative;
+        cursor: pointer;
+    }
+
+    &__preview,
+    &__background {
+        width: inherit;
+        height: inherit;
+        object-fit: cover;
+    }
+
+    &__decoration {
+        position: absolute;
+        z-index: 2;
+
+        &--play {
+            @include center();
+
+            width: toRem(30);
+        }
+
+        &--logo {
+            width: toRem(40);
+            bottom: toRem(12);
+            left: toRem(12);
+        }
+    }
+
+    &__video {
+        overflow: hidden;
+        padding-bottom: 56.5%;
+        position: relative;
+        height: 0;
+
+        iframe {
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+    }
+
+    @include media-tabletLate {
+        &__decoration {
+            &--play {
+                width: toRem(63);
+            }
+
+            &--logo {
+                width: toRem(80);
+                bottom: toRem(22);
+                left: toRem(22);
+            }
+        }
+    }
+
+    @include media-desktop {
+        &__decoration {
+            &--play {
+                width: toRem(84);
+            }
+
+            &--logo {
+                width: toRem(108);
+                bottom: toRem(30);
+                left: toRem(30);
+            }
+        }
+    }
+}

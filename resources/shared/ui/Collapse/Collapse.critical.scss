@@ -1,0 +1,56 @@
+.collapse {
+    @include paddingLevel(bottom, blue);
+
+    background-color: var(--backgroundSecondary);
+    border-radius: $borderRadiusM;
+    padding-left: toRem(24);
+    padding-right: toRem(24);
+    box-sizing: border-box;
+
+    &__main {
+        @include paddingLevel(top, blue);
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__title {
+        max-width: 80%;
+        font-weight: 500;
+
+        @include fontSize(p1);
+    }
+
+    &__icon {
+        color: var(--textBase);
+        transform: rotate(0deg);
+        font-size: toRem(24);
+    }
+
+    &__dropdown {
+        @include fontSize(p1);
+
+        box-sizing: border-box;
+        color: var(--textBase);
+    }
+
+    &__slot {
+        @include paddingLevel(top, green);
+    }
+
+    @include media-tablet {
+        @include paddingLevel(bottom, purple);
+
+        padding-left: toRem(32);
+        padding-right: toRem(32);
+
+        &__main {
+            @include paddingLevel(top, purple);
+        }
+
+        &__slot {
+            @include paddingLevel(top, pink);
+        }
+    }
+}

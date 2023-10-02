@@ -1,0 +1,106 @@
+.video-review-card {
+    $infoHeight: toRem(120);
+
+    width: toRem(274);
+    height: toRem(374);
+    position: relative;
+    border-radius: $borderRadiusL;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: inset 0 0 0 1px var(--borderBase);
+    box-sizing: border-box;
+
+    &__preview {
+        @include center(horizontal);
+
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        top: 0;
+        z-index: -1;
+        border-radius: $borderRadiusL;
+        overflow: hidden;
+    }
+
+    &__overflow {
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        background: var(--backgroundSecondaryBase);
+        opacity: 0;
+    }
+
+    &__play {
+        @include center();
+
+        z-index: 1;
+        opacity: 0;
+        top: calc((100% - #{$infoHeight}) / 2);
+    }
+
+    &__time {
+        @include fontSize(p1);
+
+        position: absolute;
+        z-index: 2;
+        top: toRem(32);
+        left: toRem(32);
+        color: var(--textSurface);
+        text-shadow: var(--shadowSecondary);
+    }
+
+    &__information {
+        @include paddingLevel(top, blue);
+        @include paddingLevel(bottom, blue);
+
+        position: absolute;
+        width: 100%;
+        height: $infoHeight;
+        bottom: 0;
+        padding-left: toRem(20);
+        padding-right: toRem(20);
+        box-sizing: border-box;
+        background: var(--backgroundSurface);
+        border: 1px solid var(--borderBase);
+        border-radius: $borderRadiusL;
+    }
+
+    &__name {
+        @include fontSize(h3);
+
+        font-weight: 600;
+    }
+
+    &__description {
+        @include marginLevel(top, orange);
+        @include fontSize(p1);
+
+        color: var(--textSecondary);
+    }
+
+    @include media-tabletLate {
+        $infoHeight: toRem(142);
+
+        width: toRem(288);
+        height: toRem(430);
+
+        &__information {
+            @include paddingLevel(top, cobalt);
+            @include paddingLevel(bottom, cobalt);
+
+            height: $infoHeight;
+            padding-left: toRem(24);
+            padding-right: toRem(24);
+        }
+
+        &__description {
+            @include marginLevel(top, yellow);
+        }
+    }
+
+    @include media-desktop {
+        width: toRem(332);
+        height: toRem(494);
+    }
+}

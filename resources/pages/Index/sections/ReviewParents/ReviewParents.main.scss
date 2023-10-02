@@ -1,0 +1,24 @@
+.review-parents {
+    &__slide {
+        display: flex;
+        align-self: stretch;
+        width: auto !important;
+        height: auto;
+
+        & + & {
+            margin-left: toRem(12);
+
+            @include media-tablet {
+                margin-left: toRem(20);
+            }
+        }
+    }
+
+    &__card {
+        width: toRem(274);
+
+        @include media-tablet {
+            width: toRem(508);
+        }
+    }
+}
